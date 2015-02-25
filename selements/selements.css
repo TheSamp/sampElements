@@ -1,0 +1,71 @@
+.sButton {
+  display: inline-block;
+  cursor: pointer;
+  margin: 0;
+  padding: 0.5em;
+  line-height: 30px;
+  height: 30px;
+  max-height: 30px;
+  overflow: hidden;
+  border: none;
+  border-style: none;
+  position: relative;
+  text-align: left;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  vertical-align: bottom;
+  /*fixes inline-block extra margin*/ }
+
+.sLoading {
+  background-size: 20px 20px;
+  -moz-background-size: 20px 20px;
+  -webkit-background-size: 20px 20px;
+  -o-background-size: 20px 20px;
+  background-image: -moz-linear-gradient(-45deg, rgba(255, 255, 255, 0.15) 0%, rgba(255, 255, 255, 0.15) 25%, rgba(255, 255, 255, 0) 25%, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, rgba(255, 255, 255, 0) 75%, rgba(255, 255, 255, 0) 100%);
+  background-image: -webkit-gradient(linear, left top, right bottom, color-stop(0%, rgba(255, 255, 255, 0.2)), color-stop(25%, rgba(255, 255, 255, 0.2)), color-stop(25%, rgba(255, 255, 255, 0)), color-stop(50%, rgba(255, 255, 255, 0)), color-stop(50%, rgba(255, 255, 255, 0.2)), color-stop(75%, rgba(255, 255, 255, 0.2)), color-stop(75%, rgba(255, 255, 255, 0)), color-stop(100%, rgba(255, 255, 255, 0)));
+  background-image: -webkit-linear-gradient(-45deg, rgba(255, 255, 255, 0.3) 0%, rgba(255, 255, 255, 0.3) 25%, rgba(255, 255, 255, 0) 25%, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0.3) 50%, rgba(255, 255, 255, 0.3) 75%, rgba(255, 255, 255, 0) 75%, rgba(255, 255, 255, 0) 100%);
+  background-image: -o-linear-gradient(-45deg, rgba(255, 255, 255, 0.15) 0%, rgba(255, 255, 255, 0.15) 25%, rgba(255, 255, 255, 0) 25%, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, rgba(255, 255, 255, 0) 75%, rgba(255, 255, 255, 0) 100%);
+  background-image: -ms-linear-gradient(-45deg, rgba(255, 255, 255, 0.15) 0%, rgba(255, 255, 255, 0.15) 25%, rgba(255, 255, 255, 0) 25%, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, rgba(255, 255, 255, 0) 75%, rgba(255, 255, 255, 0) 100%);
+  background-image: linear-gradient(135deg, rgba(255, 255, 255, 0.15) 0%, rgba(255, 255, 255, 0.15) 25%, rgba(255, 255, 255, 0) 25%, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, rgba(255, 255, 255, 0) 75%, rgba(255, 255, 255, 0) 100%);
+  animation: progress 4s linear infinite;
+  -moz-animation: progress 4s linear infinite;
+  -webkit-animation: progress 4s linear infinite;
+  -ms-animation: progress 4s linear infinite;
+  -o-animation: progress 4s linear infinite; }
+
+@-webkit-keyframes progress {
+  from {
+    background-position: 100% 10px; }
+
+  to {
+    background-position: -80px 10px; } }
+@-moz-keyframes progress {
+  from {
+    background-position: 100% 0; }
+
+  to {
+    background-position: -80px -80px; } }
+@-ms-keyframes progress {
+  from {
+    background-position: 100% 0; }
+
+  to {
+    background-position: -80px -80px; } }
+@-o-keyframes progress {
+  from {
+    background-position: 100% 0; }
+
+  to {
+    background-position: -80px -80px; } }
+@keyframes progress {
+  from {
+    background-position: 100% 0; }
+
+  to {
+    background-position: -80px -80px; } }
+.sLeft {
+  float: left; }
+
+.sRight {
+  float: right; }
