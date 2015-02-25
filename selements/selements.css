@@ -1,3 +1,57 @@
+.sClearfix {
+  display: block; }
+  .sClearfix:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0; }
+
+.sGap {
+  float: none;
+  clear: both;
+  height: 1em; }
+
+.sDivider {
+  float: none;
+  clear: both;
+  height: 1px;
+  margin: 0.5em 0 0.5em 0;
+  background-color: #666; }
+
+.sPadded-lg {
+  padding: 1em; }
+
+.sPadded {
+  padding: 0.5em; }
+
+.sPadded-sm {
+  padding: 0.25em; }
+
+.sPadded-xs {
+  padding: 0.125em; }
+
+.sHide {
+  display: none; }
+
+.sShow {
+  display: block; }
+
+.sButton,
+input[type='submit'],
+input[type="submit"]:disabled,
+input[type='button'],
+input[type="button"]:disabled,
+textarea {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  /*added no border rounding*/
+  -webkit-border-radius: 0px;
+  -moz-border-radius: 0px;
+  border-radius: 0px; }
+
 .sButton {
   display: inline-block;
   cursor: pointer;
@@ -16,6 +70,41 @@
   box-sizing: border-box;
   vertical-align: bottom;
   /*fixes inline-block extra margin*/ }
+
+.sButton-sm {
+  line-height: 20px;
+  height: 20px;
+  max-height: 20px;
+  font-size: smaller;
+  padding: 0.25em; }
+
+.sButton-lg {
+  padding: 1em;
+  line-height: 30px;
+  height: 30px;
+  max-height: 30px; }
+
+.sLeft {
+  float: left; }
+
+.sRight {
+  float: right; }
+
+.sQrtwidth,
+.sHalfwidth,
+.sFullwidth {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+.sQrtwidth {
+  width: 25%; }
+
+.sHalfwidth {
+  width: 50%; }
+
+.sFullwidth {
+  width: 100%; }
 
 .sLoading {
   background-size: 20px 20px;
@@ -64,8 +153,3 @@
 
   to {
     background-position: -80px -80px; } }
-.sLeft {
-  float: left; }
-
-.sRight {
-  float: right; }
