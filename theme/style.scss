@@ -1,0 +1,214 @@
+@import "inx/_variables";
+
+//links//
+.sLink, .sLink:link{
+  color: $link-color;
+}
+.sLink:hover, .sLink:link:hover, .sLink:visited:hover{
+  color: $link-color_hover;
+}
+.sLink:visited{
+  color: $link-color_visited;
+}
+//this things is so damn large because css pseudo elements need to be defined completely and not partially. Duh.
+.sLink{
+  display:inline-block;
+  position: relative;
+  height: 1em;
+  padding: 0.2em 0 0.2em 0;//Guestimate of line-height average 1.4em;
+
+  &.sLink-prev{
+    &.sLink-arrow-left{
+      padding-left:1em;
+      &:before{
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 0.3334em;
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 0.425em 0.425em 0.425em 0;
+        border-color: transparent $link-color transparent transparent;
+      }
+      &:hover:before{
+        border-color: transparent $link-color_hover transparent transparent;
+      }
+      &:visited:before{
+        border-color: transparent $link-color_visited transparent transparent;
+      }
+    }
+    &.sLink-arrow-right{
+      padding-right:1em;
+      &:after{
+        content: '';
+        position: absolute;
+        right: 0;
+        top: 0.3334em;
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 0.425em 0.425em 0.425em 0;
+        border-color: transparent $link-color transparent transparent;
+      }
+      &:hover:after{
+        border-color: transparent $link-color_hover transparent transparent;
+      }
+      &:visited:after{
+        border-color: transparent $link-color_visited transparent transparent;
+      }
+    }
+  }
+
+  &.sLink-next{
+    &.sLink-arrow-left{
+      padding-left:1em;
+      &:before{
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 0.3334em;
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 0.425em 0 0.425em 0.425em;
+        border-color: transparent transparent transparent $link-color;
+      }
+      &:hover:before{
+        border-color: transparent transparent transparent $link-color_hover;
+      }
+      &:visited:before{
+        border-color: transparent transparent transparent $link-color_visited;
+      }
+    }
+    &.sLink-arrow-right{
+      padding-right:1em;
+      &:after{
+        content: '';
+        position: absolute;
+        right: 0;
+        top: 0.3334em;
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 0.425em 0 0.425em 0.425em;
+        border-color: transparent transparent transparent $link-color;
+      }
+      &:hover:after{
+        border-color: transparent transparent transparent $link-color_hover;
+      }
+      &:visited:after{
+        border-color: transparent transparent transparent $link-color_visited;
+      }
+    }
+  }
+
+  &.sLink-up{
+    &.sLink-arrow-left{
+      padding-left:1em;
+      &:before{
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 0.5em;
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 0 0.425em 0.425em 0.425em;
+        border-color: transparent transparent $link-color transparent;
+      }
+      &:hover:before{
+        border-color: transparent transparent $link-color_hover transparent;
+      }
+      &:visited:before{
+        border-color: transparent transparent $link-color_visited transparent;
+      }
+    }
+    &.sLink-arrow-right{
+      padding-right:1em;
+      &:after{
+        content: '';
+        position: absolute;
+        right: 0;
+        top: 0.5em;
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 0 0.425em 0.425em 0.425em;
+        border-color: transparent transparent $link-color transparent;
+      }
+      &:hover:after{
+        border-color: transparent transparent $link-color_hover transparent;
+      }
+      &:visited:after{
+        border-color: transparent transparent $link-color_visited transparent;
+      }
+    }
+  }
+
+  &.sLink-down{
+    &.sLink-arrow-left{
+      padding-left:1em;
+      &:before{
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 0.5em;
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 0.425em 0.425em 0 0.425em;
+        border-color: $link-color transparent transparent transparent;
+      }
+      &:hover:before{
+        border-color: $link-color_hover transparent transparent transparent;
+      }
+      &:visited:before{
+        border-color: $link-color_visited transparent transparent transparent;
+      }
+    }
+    &.sLink-arrow-right{
+      padding-right:1em;
+      &:after{
+        content: '';
+        position: absolute;
+        right: 0;
+        top: 0.5em;
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 0.425em 0.425em 0 0.425em;
+        border-color: $link-color transparent transparent transparent;
+      }
+      &:hover:after{
+        border-color: $link-color_hover transparent transparent transparent;
+      }
+      &:visited:after{
+        border-color: $link-color_visited transparent transparent transparent;
+      }
+    }
+  }
+
+}
+
+.sButton{
+  background-color:$btn-bg-col;
+
+  &.sButton-primary{
+    background-color:$btn-primary-bg-col;
+    &:hover, &:focus, &:active{
+      background-color:$btn-primary-bg-col_hover;
+    }
+    &.sButton-disabled:hover, &.sButton-disabled:focus, &.sButton-disabled:active{
+      background-color:$btn-disabled-bg-col;
+    }
+  }
+  &.sButton-secondary{
+    background-color:$btn-primary-bg-col_hover/2;
+  }
+  &.sButton-primary.sButton-disabled,
+  &.rxSecondary.sButton-disabled,
+  &.sButton-disabled{
+    background-color:$btn-disabled-bg-col;
+  }
+}

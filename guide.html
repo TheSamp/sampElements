@@ -1,0 +1,228 @@
+<!doctype html>
+    <!--[if IE 8 ]>    <html lang="en" class="ie8"> <![endif]-->
+    <!--[if IE 9 ]>    <html lang="en" class="ie9"> <![endif]-->
+    <html lang="en">
+    <head>
+        <meta charset="utf-8">
+            <!--[if IE ]>
+                <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+            <![endif]-->
+        <title>Style guide</title>
+        <script type="text/javascript">
+            var htmlEncode = function(s){
+                var el = document.createElement("div");
+                el.innerHTML = el.textContent = s;
+                return el.innerHTML;
+            }
+        </script>
+        <link href='http://fonts.googleapis.com/css?family=Share+Tech+Mono' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" type="text/css" href="https://cdn.rawgit.com/TheSamp/sGrid/master/css/sgrid.css" media="all">
+        <link rel="stylesheet" type="text/css" href="selements/selements.css" media="all">
+        <link rel="stylesheet" type="text/css" href="theme/style.css" media="all">
+        <style type="text/css">
+            body{
+                font-family: 'Share Tech Mono';
+                font-size: 14px;
+            }
+            .sSlab{
+                border: 1px solid #dddddd;
+                padding: 1em;
+                max-width: 1000px;
+                margin: 0 auto 1em auto;
+            }
+            .guide-active,
+            .example-holder{
+                background-color: #999999;
+            }
+            .example-holder{
+                position: fixed;
+                top: -15%;
+                left: 0;
+                width: 100%;
+                padding: 2em;
+                text-align: center;
+                border-bottom: 1px solid #333;
+            }
+            .item-example{
+                cursor: pointer;
+            }
+            .element-example{
+                background-color: #f2f2f2;
+            }
+            .guide-example{
+                text-align: left;
+                margin-left:auto;
+                margin-right:auto;
+                background-color: #fff;
+                line-height: 20px;
+                padding: 5px 20px 5px 20px;
+                display: inline-block;
+                margin-right:0 0.5em 0 0;
+                border: 2px solid #333;
+            }
+            .sButton{
+                margin:0 0.5em 0 0;
+            }
+            h1{
+                line-height: 2em;
+            }
+            h2{
+                line-height: 2em;
+                margin-bottom: 0.5em;
+            }
+            h3{
+                line-height: 1.8em;
+                margin-bottom: 0.5em;
+            }
+            ul,li{
+                list-style: none;
+                padding: 0;
+                margin: 0;
+            }
+            li span{
+                float:left;
+            }
+            li span:last-child{
+                padding-top:0.75em;
+                text-transform: uppercase;
+            }
+            .element-holder{
+                margin-bottom:2em;
+            }
+            code{
+                display: none;
+                color: #666;
+            }
+            em{
+                color: red;
+            }
+        </style>
+    </head>
+    <body>
+
+        <div class="sgrid sPage">
+            <div class="sSlab">
+                <h1>HTML/CSS Styleguide</h1>
+            </div>
+
+            <div class="sSlab">
+                <h3>Elements</h3>
+                <script type="text/javascript">
+                    cssClss = [
+                        'sDivider',
+                        'sGap',
+                        'sClearfix',
+                        'sPadded-lg',
+                        'sPadded',
+                        'sPadded-sm',
+                        'sPadded-xs',
+                        'sNoPadding',
+                        'sNoPadding-top',
+                        'sNoPadding-right',
+                        'sNoPadding-bottom',
+                        'sNoPadding-left',
+                        'sHide',
+                        'sShow',
+                        'sLeft',
+                        'sRight',
+                        'sQrtwidth',
+                        'sHalfwidth',
+                        'sFullwidth',
+                        'sLoading'
+                    ];
+                        for(var i = 0; i < cssClss.length; i++){
+                            var clsStr = cssClss[i];
+                            document.write('<div class="element-holder"><h3>'+clsStr.slice(1)+'</h3><div class="element-example '+clsStr+'"></div><code><div class="'+clsStr+'"></div></code></div>');//data-code="'+dc+'"
+                        }
+                </script>
+            </div>
+
+            <div class="sSlab">
+                <h2>Themed elements</h2>
+                <p><em>These elements need theme/style.css to work properly = need colours.</em></p>
+                <h3>Directional links</h3>
+                <script type="text/javascript">
+                    cssClss = [
+                        'sLink-up',
+                        'sLink-down',
+                        'sLink-prev',
+                        'sLink-next'
+                    ];
+                    var dArr = ['left','right'];
+                    for(var i = 0; i < cssClss.length; i++){
+                        for(var j = 0; j < dArr.length; j++){
+                            var clsStr = cssClss[i]+' sLink-arrow-'+dArr[j];
+                            var dc = '&lt;a class=&quot;sLink '+clsStr+'&quot;&gt;&lt;/a&gt;';
+                            document.write('<a class="item-example sLink '+clsStr+' '+dArr[j]+'" data-code="'+dc+'">'+cssClss[i].replace(/s/g,'')+' (arrow '+dArr[j]+')</a>');
+                            if(j % 2 != 0)document.write('<div class="sGap"></div>');
+                        }
+                    }
+                </script>
+
+                <div class="sDivider"></div>
+
+                <h3>Buttons</h3>
+                <script type="text/javascript">
+                    cssClss = [
+                        'sButton-lg',
+                        'sButton',
+                        'sButton-sm',
+                        'sButton-xs'
+                    ];
+                    var dArr = ['', 'sButton-primary','sButton-secondary','sButton-disabled'];
+                    for(var j = 0; j < dArr.length; j++){
+                        for(var i = 0; i < cssClss.length; i++){
+                            var clsStr = 'sButton '+cssClss[i];
+                            if(dArr[j] != '') clsStr += ' '+dArr[j];
+                            clsStr = clsStr.replace(cssClss[i]+' '+cssClss[i], cssClss[i]);//remove duplicate
+                            var dc = '&lt;button class=&quot;'+clsStr+'&quot;&gt;&lt;/button&gt;';
+                            var iTxt = 'sButton '+cssClss[i]+'';
+                            if(j == 1) iTxt += ' ('+dArr[j]+')';
+                            document.write('<button class="item-example '+clsStr+' '+dArr[j]+'" data-code="'+dc+'">'+iTxt.slice(1)+'</button>');
+                        }
+
+                        document.write('<div class="sGap"></div>');
+                    }
+
+                    document.write('<div class="sGap"></div>');
+
+                </script>
+            </div>
+        </div>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+        <script>
+        (function($){
+            $.fn.htmlElementEncode = function(){
+                    return this.each(function() {
+                        $(this).text(htmlEncode(this.innerHTML));
+                    });
+            };
+        })(jQuery);
+
+            $(document).ready(function(){
+
+                    $('code').htmlElementEncode().show();
+
+                    $(document.body).on('click', '.item-example', function(e){
+                        e.preventDefault();
+                            if($(this).hasClass('guide-active')){
+                                    $('.item-example').removeClass('guide-active');
+                                    $('.example-holder').animate({'top':'-15%'}, 250, function(){
+                                            $(this).remove();
+                                    });
+                            }else{
+                                    $('.item-example').removeClass('guide-active');
+                                    $('.example-holder').remove();
+                                var str = $(this).attr('data-code');
+                                    $(this).addClass('guide-active');
+                                    $('body').append('<div class="example-holder"><span class="guide-example"></span></div>');
+                                    $('.example-holder > .guide-example').text(str);//.before(str);
+                                    $('.example-holder').animate({'top':'0px'}, 250);
+                            }
+                        }
+                    );
+
+            });
+        </script>
+    </body>
+</html>

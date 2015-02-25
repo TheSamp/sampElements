@@ -56,7 +56,7 @@ textarea {
   display: inline-block;
   cursor: pointer;
   margin: 0;
-  padding: 0.5em;
+  padding: 0 0.5em 0 0.5em;
   line-height: 30px;
   height: 30px;
   max-height: 30px;
@@ -69,20 +69,43 @@ textarea {
   -moz-box-sizing: border-box;
   box-sizing: border-box;
   vertical-align: bottom;
-  /*fixes inline-block extra margin*/ }
+  /*fixes inline-block extra margin*/
+  text-decoration: none; }
+
+.sButton-xs {
+  line-height: 16px;
+  height: 16px;
+  max-height: 16px;
+  font-size: x-small;
+  padding: 0 0.125em 0 0.125em; }
 
 .sButton-sm {
   line-height: 20px;
   height: 20px;
   max-height: 20px;
   font-size: smaller;
-  padding: 0.25em; }
+  padding: 0 0.25em 0 0.25em; }
 
 .sButton-lg {
-  padding: 1em;
-  line-height: 30px;
-  height: 30px;
-  max-height: 30px; }
+  padding: 0 1em 0 1em;
+  line-height: 40px;
+  height: 40px;
+  max-height: 40px; }
+
+.sNoPadding {
+  padding: 0; }
+
+.sNoPadding-top {
+  padding-top: 0; }
+
+.sNoPadding-right {
+  padding-right: 0; }
+
+.sNoPadding-bottom {
+  padding-bottom: 0; }
+
+.sNoPadding-left {
+  padding-left: 0; }
 
 .sLeft {
   float: left; }
