@@ -87,6 +87,54 @@ textarea {
 .sPadded-xs {
   padding: 0.125em; }
 
+.sPadded-lg-top {
+  padding-top: 1em; }
+
+.sPadded-top {
+  padding-top: 0.5em; }
+
+.sPadded-sm-top {
+  padding-top: 0.25em; }
+
+.sPadded-xs-top {
+  padding-top: 0.125em; }
+
+.sPadded-lg-right {
+  padding-right: 1em; }
+
+.sPadded-right {
+  padding-right: 0.5em; }
+
+.sPadded-sm-right {
+  padding-right: 0.25em; }
+
+.sPadded-xs-right {
+  padding-right: 0.125em; }
+
+.sPadded-lg-bottom {
+  padding-bottom: 1em; }
+
+.sPadded-bottom {
+  padding-bottom: 0.5em; }
+
+.sPadded-sm-bottom {
+  padding-bottom: 0.25em; }
+
+.sPadded-xs-bottom {
+  padding-bottom: 0.125em; }
+
+.sPadded-lg-left {
+  padding-left: 1em; }
+
+.sPadded-left {
+  padding-left: 0.5em; }
+
+.sPadded-sm-left {
+  padding-left: 0.25em; }
+
+.sPadded-xs-left {
+  padding-left: 0.125em; }
+
 .sNopadding {
   padding: 0; }
 
