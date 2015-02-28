@@ -24,10 +24,10 @@
       border-style: solid;
       border-width: 0.425em 0.425em 0.425em 0;
       border-color: transparent #336699 transparent transparent; }
-    .sLink.sLink-prev.sLink-arrow-left:hover:before {
-      border-color: transparent #996633 transparent transparent; }
     .sLink.sLink-prev.sLink-arrow-left:visited:before {
       border-color: transparent #336699 transparent transparent; }
+    .sLink.sLink-prev.sLink-arrow-left:hover:before {
+      border-color: transparent #996633 transparent transparent; }
   .sLink.sLink-prev.sLink-arrow-right {
     padding-right: 1em; }
     .sLink.sLink-prev.sLink-arrow-right:after {
@@ -40,10 +40,10 @@
       border-style: solid;
       border-width: 0.425em 0.425em 0.425em 0;
       border-color: transparent #336699 transparent transparent; }
-    .sLink.sLink-prev.sLink-arrow-right:hover:after {
-      border-color: transparent #996633 transparent transparent; }
     .sLink.sLink-prev.sLink-arrow-right:visited:after {
       border-color: transparent #336699 transparent transparent; }
+    .sLink.sLink-prev.sLink-arrow-right:hover:after {
+      border-color: transparent #996633 transparent transparent; }
   .sLink.sLink-next.sLink-arrow-left {
     padding-left: 1em; }
     .sLink.sLink-next.sLink-arrow-left:before {
@@ -56,10 +56,10 @@
       border-style: solid;
       border-width: 0.425em 0 0.425em 0.425em;
       border-color: transparent transparent transparent #336699; }
-    .sLink.sLink-next.sLink-arrow-left:hover:before {
-      border-color: transparent transparent transparent #996633; }
     .sLink.sLink-next.sLink-arrow-left:visited:before {
       border-color: transparent transparent transparent #336699; }
+    .sLink.sLink-next.sLink-arrow-left:hover:before {
+      border-color: transparent transparent transparent #996633; }
   .sLink.sLink-next.sLink-arrow-right {
     padding-right: 1em; }
     .sLink.sLink-next.sLink-arrow-right:after {
@@ -72,10 +72,10 @@
       border-style: solid;
       border-width: 0.425em 0 0.425em 0.425em;
       border-color: transparent transparent transparent #336699; }
-    .sLink.sLink-next.sLink-arrow-right:hover:after {
-      border-color: transparent transparent transparent #996633; }
     .sLink.sLink-next.sLink-arrow-right:visited:after {
       border-color: transparent transparent transparent #336699; }
+    .sLink.sLink-next.sLink-arrow-right:hover:after {
+      border-color: transparent transparent transparent #996633; }
   .sLink.sLink-up.sLink-arrow-left {
     padding-left: 1em; }
     .sLink.sLink-up.sLink-arrow-left:before {
@@ -88,10 +88,10 @@
       border-style: solid;
       border-width: 0 0.425em 0.425em 0.425em;
       border-color: transparent transparent #336699 transparent; }
-    .sLink.sLink-up.sLink-arrow-left:hover:before {
-      border-color: transparent transparent #996633 transparent; }
     .sLink.sLink-up.sLink-arrow-left:visited:before {
       border-color: transparent transparent #336699 transparent; }
+    .sLink.sLink-up.sLink-arrow-left:hover:before {
+      border-color: transparent transparent #996633 transparent; }
   .sLink.sLink-up.sLink-arrow-right {
     padding-right: 1em; }
     .sLink.sLink-up.sLink-arrow-right:after {
@@ -104,10 +104,10 @@
       border-style: solid;
       border-width: 0 0.425em 0.425em 0.425em;
       border-color: transparent transparent #336699 transparent; }
-    .sLink.sLink-up.sLink-arrow-right:hover:after {
-      border-color: transparent transparent #996633 transparent; }
     .sLink.sLink-up.sLink-arrow-right:visited:after {
       border-color: transparent transparent #336699 transparent; }
+    .sLink.sLink-up.sLink-arrow-right:hover:after {
+      border-color: transparent transparent #996633 transparent; }
   .sLink.sLink-down.sLink-arrow-left {
     padding-left: 1em; }
     .sLink.sLink-down.sLink-arrow-left:before {
@@ -120,10 +120,10 @@
       border-style: solid;
       border-width: 0.425em 0.425em 0 0.425em;
       border-color: #336699 transparent transparent transparent; }
-    .sLink.sLink-down.sLink-arrow-left:hover:before {
-      border-color: #996633 transparent transparent transparent; }
     .sLink.sLink-down.sLink-arrow-left:visited:before {
       border-color: #336699 transparent transparent transparent; }
+    .sLink.sLink-down.sLink-arrow-left:hover:before {
+      border-color: #996633 transparent transparent transparent; }
   .sLink.sLink-down.sLink-arrow-right {
     padding-right: 1em; }
     .sLink.sLink-down.sLink-arrow-right:after {

@@ -31,11 +31,11 @@
         border-width: 0.425em 0.425em 0.425em 0;
         border-color: transparent $link-color transparent transparent;
       }
-      &:hover:before{
-        border-color: transparent $link-color_hover transparent transparent;
-      }
       &:visited:before{
         border-color: transparent $link-color_visited transparent transparent;
+      }
+      &:hover:before{
+        border-color: transparent $link-color_hover transparent transparent;
       }
     }
     &.sLink-arrow-right{
@@ -51,11 +51,11 @@
         border-width: 0.425em 0.425em 0.425em 0;
         border-color: transparent $link-color transparent transparent;
       }
-      &:hover:after{
-        border-color: transparent $link-color_hover transparent transparent;
-      }
       &:visited:after{
         border-color: transparent $link-color_visited transparent transparent;
+      }
+      &:hover:after{
+        border-color: transparent $link-color_hover transparent transparent;
       }
     }
   }
@@ -74,12 +74,13 @@
         border-width: 0.425em 0 0.425em 0.425em;
         border-color: transparent transparent transparent $link-color;
       }
-      &:hover:before{
-        border-color: transparent transparent transparent $link-color_hover;
-      }
       &:visited:before{
         border-color: transparent transparent transparent $link-color_visited;
       }
+      &:hover:before{
+        border-color: transparent transparent transparent $link-color_hover;
+      }
+
     }
     &.sLink-arrow-right{
       padding-right:1em;
@@ -94,11 +95,11 @@
         border-width: 0.425em 0 0.425em 0.425em;
         border-color: transparent transparent transparent $link-color;
       }
-      &:hover:after{
-        border-color: transparent transparent transparent $link-color_hover;
-      }
       &:visited:after{
         border-color: transparent transparent transparent $link-color_visited;
+      }
+      &:hover:after{
+        border-color: transparent transparent transparent $link-color_hover;
       }
     }
   }
@@ -117,11 +118,11 @@
         border-width: 0 0.425em 0.425em 0.425em;
         border-color: transparent transparent $link-color transparent;
       }
-      &:hover:before{
-        border-color: transparent transparent $link-color_hover transparent;
-      }
       &:visited:before{
         border-color: transparent transparent $link-color_visited transparent;
+      }
+      &:hover:before{
+        border-color: transparent transparent $link-color_hover transparent;
       }
     }
     &.sLink-arrow-right{
@@ -137,11 +138,11 @@
         border-width: 0 0.425em 0.425em 0.425em;
         border-color: transparent transparent $link-color transparent;
       }
-      &:hover:after{
-        border-color: transparent transparent $link-color_hover transparent;
-      }
       &:visited:after{
         border-color: transparent transparent $link-color_visited transparent;
+      }
+      &:hover:after{
+        border-color: transparent transparent $link-color_hover transparent;
       }
     }
   }
@@ -160,11 +161,11 @@
         border-width: 0.425em 0.425em 0 0.425em;
         border-color: $link-color transparent transparent transparent;
       }
-      &:hover:before{
-        border-color: $link-color_hover transparent transparent transparent;
-      }
       &:visited:before{
         border-color: $link-color_visited transparent transparent transparent;
+      }
+      &:hover:before{
+        border-color: $link-color_hover transparent transparent transparent;
       }
     }
     &.sLink-arrow-right{
@@ -188,7 +189,6 @@
       }
     }
   }
-
 }
 
 .sButton{
