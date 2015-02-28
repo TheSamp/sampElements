@@ -81,68 +81,68 @@ textarea{
   max-height:40px;
 }
 
-.sPadded-lg {
+.sPadding-lg {
   padding: 1em;
 }
-.sPadded {
+.sPadding {
   padding: 0.5em;
 }
-.sPadded-sm {
+.sPadding-sm {
   padding: 0.25em;
 }
-.sPadded-xs {
+.sPadding-xs {
   padding: 0.125em;
 }
 
-.sPadded-lg-top {
+.sPadding-lg-top {
   padding-top: 1em;
 }
-.sPadded-top {
+.sPadding-top {
   padding-top: 0.5em;
 }
-.sPadded-sm-top {
+.sPadding-sm-top {
   padding-top: 0.25em;
 }
-.sPadded-xs-top {
+.sPadding-xs-top {
   padding-top: 0.125em;
 }
 
-.sPadded-lg-right {
+.sPadding-lg-right {
   padding-right: 1em;
 }
-.sPadded-right {
+.sPadding-right {
   padding-right: 0.5em;
 }
-.sPadded-sm-right {
+.sPadding-sm-right {
   padding-right: 0.25em;
 }
-.sPadded-xs-right {
+.sPadding-xs-right {
   padding-right: 0.125em;
 }
 
-.sPadded-lg-bottom {
+.sPadding-lg-bottom {
   padding-bottom: 1em;
 }
-.sPadded-bottom {
+.sPadding-bottom {
   padding-bottom: 0.5em;
 }
-.sPadded-sm-bottom {
+.sPadding-sm-bottom {
   padding-bottom: 0.25em;
 }
-.sPadded-xs-bottom {
+.sPadding-xs-bottom {
   padding-bottom: 0.125em;
 }
 
-.sPadded-lg-left {
+.sPadding-lg-left {
   padding-left: 1em;
 }
-.sPadded-left {
+.sPadding-left {
   padding-left: 0.5em;
 }
-.sPadded-sm-left {
+.sPadding-sm-left {
   padding-left: 0.25em;
 }
-.sPadded-xs-left {
+.sPadding-xs-left {
   padding-left: 0.125em;
 }
 
@@ -160,6 +160,87 @@ textarea{
 }
 .sNopadding-left{
   padding-left: 0;
+}
+
+.sMargin-lg {
+  margin: 1em;
+}
+.sMargin {
+  margin: 0.5em;
+}
+.sMargin-sm {
+  margin: 0.25em;
+}
+.sMargin-xs {
+  margin: 0.125em;
+}
+
+.sMargin-lg-top {
+  margin-top: 1em;
+}
+.sMargin-top {
+  margin-top: 0.5em;
+}
+.sMargin-sm-top {
+  margin-top: 0.25em;
+}
+.sMargin-xs-top {
+  margin-top: 0.125em;
+}
+
+.sMargin-lg-right {
+  margin-right: 1em;
+}
+.sMargin-right {
+  margin-right: 0.5em;
+}
+.sMargin-sm-right {
+  margin-right: 0.25em;
+}
+.sMargin-xs-right {
+  margin-right: 0.125em;
+}
+
+.sMargin-lg-bottom {
+  margin-bottom: 1em;
+}
+.sMargin-bottom {
+  margin-bottom: 0.5em;
+}
+.sMargin-sm-bottom {
+  margin-bottom: 0.25em;
+}
+.sMargin-xs-bottom {
+  margin-bottom: 0.125em;
+}
+
+.sMargin-lg-left {
+  margin-left: 1em;
+}
+.sMargin-left {
+  margin-left: 0.5em;
+}
+.sMargin-sm-left {
+  margin-left: 0.25em;
+}
+.sMargin-xs-left {
+  margin-left: 0.125em;
+}
+
+.sNomargin{
+  margin: 0;
+}
+.sNomargin-top{
+  margin-top: 0;
+}
+.sNomargin-right{
+  margin-right: 0;
+}
+.sNomargin-bottom{
+  margin-bottom: 0;
+}
+.sNomargin-left{
+  margin-left: 0;
 }
 
 .sHide{
