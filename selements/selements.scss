@@ -24,26 +24,6 @@
   background-color:#666;
 }
 
-.sPadded-lg {
-  padding: 1em;
-}
-.sPadded {
-  padding: 0.5em;
-}
-.sPadded-sm {
-  padding: 0.25em;
-}
-.sPadded-xs {
-  padding: 0.125em;
-}
-
-.sHide{
-  display:none;
-}
-.sShow{
-  display: block;
-}
-
 //buttons//
 .sButton,
 input[type='submit'],
@@ -101,21 +81,50 @@ textarea{
   max-height:40px;
 }
 
-.sNoPadding{
+
+.sPadded-lg {
+  padding: 1em;
+}
+.sPadded {
+  padding: 0.5em;
+}
+.sPadded-sm {
+  padding: 0.25em;
+}
+.sPadded-xs {
+  padding: 0.125em;
+}
+
+.sNopadding{
   padding: 0;
 }
-.sNoPadding-top{
+.sNopadding-top{
   padding-top: 0;
 }
-.sNoPadding-right{
+.sNopadding-right{
   padding-right: 0;
 }
-.sNoPadding-bottom{
+.sNopadding-bottom{
   padding-bottom: 0;
 }
-.sNoPadding-left{
+.sNopadding-left{
   padding-left: 0;
 }
+
+.sHide{
+  display:none;
+}
+.sShow{
+  display: block;
+}
+
+.sVisible{
+  visibility: visible;
+}
+.sNovisible{
+  visibility: hidden;
+}
+
 
 .sLeft{
   float:left;
